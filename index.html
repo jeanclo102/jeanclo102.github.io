@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Subidas YouTube — Herramienta de publicación personal</title>
+<style>
+  :root{--bg:#0d1117;--card:#161b22;--gold:#d4a94e;--txt:#e8e8e8;--mut:#9aa3af}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.6;min-height:100vh;display:flex;flex-direction:column}
+  header{padding:56px 24px 40px;text-align:center;background:radial-gradient(ellipse at 50% 0%,#1c2534 0%,var(--bg) 70%)}
+  .badge{display:inline-block;border:1px solid var(--gold);color:var(--gold);border-radius:999px;padding:4px 16px;font-size:13px;letter-spacing:2px;margin-bottom:18px}
+  h1{font-size:clamp(28px,5vw,44px);letter-spacing:1px}
+  h1 span{color:var(--gold)}
+  p.lead{color:var(--mut);max-width:640px;margin:14px auto 0;font-size:17px}
+  main{max-width:760px;margin:0 auto;padding:24px;width:100%;flex:1}
+  .card{background:var(--card);border:1px solid #2a3342;border-radius:14px;padding:26px;margin:18px 0}
+  .card h2{color:var(--gold);font-size:20px;margin-bottom:10px}
+  .card p,.card li{color:#c9d1d9;font-size:15px}
+  .card ul{padding-left:20px;margin-top:8px}
+  .card li{margin:6px 0}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  @media(max-width:640px){.grid{grid-template-columns:1fr}}
+  a{color:var(--gold)}
+  footer{text-align:center;color:var(--mut);font-size:13px;padding:28px 16px;border-top:1px solid #2a3342}
+  footer nav{margin-bottom:10px}
+  footer nav a{margin:0 12px;text-decoration:none}
+</style>
+</head>
+<body>
+<header>
+  <div class="badge">APP DE USO PERSONAL</div>
+  <h1>Subidas <span>YouTube</span></h1>
+  <p class="lead">Herramienta personal para publicar videos en los canales propios de YouTube mediante la API oficial de YouTube Data v3.</p>
+</header>
+<main>
+  <div class="card">
+    <h2>¿Qué es esta aplicación?</h2>
+    <p>Subidas YouTube es una aplicación de uso exclusivamente personal, desarrollada para el creador de los canales <strong>Mapa de lo Desconocido</strong> y <strong>Mastermind</strong>. Automatiza desde su propio equipo la publicación de videos ya producidos: sube el archivo de video, aplica la miniatura, el título, la descripción y publica el primer comentario.</p>
+  </div>
+  <div class="grid">
+    <div class="card">
+      <h2>Lo que hace</h2>
+      <ul>
+        <li>Sube videos a los canales propios del creador mediante OAuth con su cuenta.</li>
+        <li>Aplica miniatura, título, descripción y configuración de idioma.</li>
+        <li>Publica el primer comentario de cada video.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>Lo que NO hace</h2>
+      <ul>
+        <li>No se publica ni se ofrece al público: solo la usa su desarrollador.</li>
+        <li>No accede a canales, datos ni cuentas de terceros.</li>
+        <li>No vende, comparte ni cede ningún dato a terceros.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="card">
+    <h2>Transparencia</h2>
+    <p>El uso de datos de esta aplicación se describe en su <a href="privacidad.html">Política de Privacidad</a>. Para dudas o solicitudes, escribe a <a href="mailto:jeanclo102@gmail.com">jeanclo102@gmail.com</a>.</p>
+  </div>
+</main>
+<footer>
+  <nav><a href="index.html">Inicio</a><a href="privacidad.html">Privacidad</a><a href="terminos.html">Términos</a></nav>
+  © 2026 Subidas YouTube · Uso personal
+</footer>
+</body>
+</html>
